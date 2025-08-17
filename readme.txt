@@ -1,10 +1,10 @@
 Personal Portfolio Website
 Description
-This is a responsive personal portfolio website built with HTML, CSS, Bootstrap, and JavaScript. It showcases my web development skills, projects, and services I offer to clients. The website features multiple language support (English, Russian, Latvian) and a clean, modern design.
+This is a responsive personal portfolio website built with HTML, CSS, Bootstrap, and JavaScript. It showcases my web development skills, projects, and services I offer to clients. The website features multiple language support (English, Russian, Latvian, Spain) and a clean, modern design.
 
 Key Features
 Responsive design that works on all devices
-Multi-language support (EN/RU/LV)
+Multi-language support (EN/RU/LV/ES)
 Project showcase section
 Contact form with Formspree integration
 Smooth scrolling navigation
