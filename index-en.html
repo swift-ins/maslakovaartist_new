@@ -41,7 +41,6 @@
   </header>
 </body>
 
-
 <section id="hero-banner" style="position:relative; height:100vh; background:url('images/mm.jpg') no-repeat center center/cover;">
     <div class="banner-inner" style="position:absolute; bottom:50px; left:30px;">
         <h1 style="font-family:'Playfair Display',serif; color:#f5eff5; font-size:5.5em; margin:0;">
@@ -136,7 +135,6 @@
           <br><br>
           Each client is unique, and I treat everyone with warmth, care, and deep respect. Because true beauty begins with love.
         </p>
-
         <!-- Три кнопки для видео -->
         <div class="row mt-5 justify-content-center">
           <div class="col-md-4 mb-3">
@@ -255,9 +253,14 @@
 </div>
 
 <!-- Модальное окно -->
-<div id="imageModal" onclick="closeModal()">
-    <span onclick="closeModal()">×</span>
-    <img id="modalImage">
+<div id="imageModal" onclick="closeModal()" 
+     style="display:none; position:fixed; z-index:1000; padding-top:10vh; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.9); text-align:center;">
+    <span onclick="closeModal()" 
+          style="position:absolute; top:15px; right:25px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer;">
+        ×
+    </span>
+    <img id="modalImage" 
+         style="max-width:90%; max-height:80vh; border-radius:10px;">
 </div>
 
 <script>
@@ -272,6 +275,26 @@ function closeModal() {
 </script>
 
 </section>
+
+<!-- Адаптация прямо в HTML -->
+<style>
+@media (max-width: 768px) {
+  #portfolio h1 {
+    font-size: 1.8em !important;
+    margin-bottom: 30px !important;
+  }
+
+  #imageModal img {
+    max-width: 95% !important;
+    max-height: 70vh !important;
+  }
+
+  #imageModal span {
+    font-size: 30px !important;
+    right: 15px !important;
+  }
+}
+</style>
 
 <section id="portfolio">
     <div class="container">

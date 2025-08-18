@@ -41,8 +41,6 @@
   </header>
 </body>
 
-
-
 <section id="hero-banner" style="position:relative; height:100vh; background:url('images/mm.jpg') no-repeat center center/cover;">
     <div class="banner-inner" style="position:absolute; bottom:50px; left:30px;">
         <h1 style="font-family:'Playfair Display',serif; color:#f5eff5; font-size:5.5em; margin:0;">
@@ -111,7 +109,6 @@
         </li>
     </ul>
 </div>
-
 
 
 <section id="about" style="padding: 60px 0; background: url('images/pero.png') center/cover no-repeat fixed;">
@@ -256,9 +253,14 @@
 </div>
 
 <!-- Модальное окно -->
-<div id="imageModal" onclick="closeModal()">
-    <span onclick="closeModal()">×</span>
-    <img id="modalImage">
+<div id="imageModal" onclick="closeModal()" 
+     style="display:none; position:fixed; z-index:1000; padding-top:10vh; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.9); text-align:center;">
+    <span onclick="closeModal()" 
+          style="position:absolute; top:15px; right:25px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer;">
+        ×
+    </span>
+    <img id="modalImage" 
+         style="max-width:90%; max-height:80vh; border-radius:10px;">
 </div>
 
 <script>
@@ -273,6 +275,26 @@ function closeModal() {
 </script>
 
 </section>
+
+<!-- Адаптация прямо в HTML -->
+<style>
+@media (max-width: 768px) {
+  #portfolio h1 {
+    font-size: 1.8em !important;
+    margin-bottom: 30px !important;
+  }
+
+  #imageModal img {
+    max-width: 95% !important;
+    max-height: 70vh !important;
+  }
+
+  #imageModal span {
+    font-size: 30px !important;
+    right: 15px !important;
+  }
+}
+</style>
 
 <section id="portfolio">
     <div class="container">
@@ -413,12 +435,13 @@ function closeModal() {
 </section>
  
 
-  <!-- Kontakti -->
+ <!-- Kontakti -->
   <section id="contact-me" style="background:url('images/pero.png') center/cover no-repeat fixed; padding:60px 0;">
     <div class="container text-center">
       <h1 style="font-family:'Playfair Display',serif; font-size:3em; color:#373637;">Kontakti</h1>
       <div style="font-family:'Lora',serif; font-size:1.2em; color:#373637; margin-top:20px;">
         <p>E-pasts: maslakovlife@gmail.com</p>
+        <p>Skropstas un permanentās</p>
         <p>Tāl: +371 2969 4264 (Latvija)</p>
         <p>Tāl: +34 6043 49880 (Spānija)</p>
         <p>WhatsApp, Telegram, Facebook, Instagram</p>
