@@ -41,22 +41,44 @@
   </header>
 </body>
 
-  <section id="hero-banner">
-    <div class="banner-inner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">                                
-                    <h1 style="font-family: 'Playfair Display', serif; color: #f5eff5; font-size: 5.5em; margin-top: 400px; margin-left: -185px;">
-                        Maslakova Artist
-                    </h1>
-                    <h3 style="font-family: 'Playfair Display', serif; color: #f5eff5; font-size: 2.5em; margin-left: -100px;">
-                        Lash and Permanent
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>  
-    </section><!--/#main-slider-->
+<section id="hero-banner" style="position:relative; height:100vh; background:url('images/mm.jpg') no-repeat center center/cover;">
+    <div class="banner-inner" style="position:absolute; bottom:50px; left:30px;">
+        <h1 style="font-family:'Playfair Display',serif; color:#f5eff5; font-size:5.5em; margin:0;">
+            Maslakova Artist
+        </h1>
+        <h3 style="font-family:'Playfair Display',serif; color:#f5eff5; font-size:2.5em; margin-top:10px;">
+            Lash and Permanent
+        </h3>
+    </div>
+</section>
+
+    <!-- Медиазапросы прямо внутри HTML -->
+    <style>
+        @media (max-width: 768px) {
+            #hero-banner {
+                padding:100px 20px;
+            }
+            #hero-banner h1 {
+                font-size:3em;
+            }
+            #hero-banner h3 {
+                font-size:1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            #hero-banner {
+                padding:70px 15px;
+            }
+            #hero-banner h1 {
+                font-size:2.2em;
+            }
+            #hero-banner h3 {
+                font-size:1.2em;
+            }
+        }
+    </style>
+</section>
+
 
 <div class="collapse navbar-collapse" style="background-color: #373637;">
     <ul class="nav navbar-nav navbar-right" style="margin: 0; padding: 0 20px;">
