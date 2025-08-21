@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +10,14 @@
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
+    
     <link rel="shortcut icon" href="web_images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
 
-    <style>
+        <style>
         /* Стили для навигации */
         .collapse.navbar-collapse ul.navbar-nav li a {
             transition: color 0.3s ease;
@@ -41,8 +41,8 @@
   </header>
 </body>
 
-<section id="hero-banner">
-    <div class="banner-inner">
+<section id="hero-banner" style="position:relative; height:100vh; background:url('web_images/mm.jpg') no-repeat center center/cover;">
+    <div class="banner-inner" style="position:absolute; bottom:50px; left:30px;">
         <h1 class="hero-title">Maslakova Artist</h1>
         <h3 class="hero-subtitle">Lash and Permanent</h3>
     </div>
@@ -96,6 +96,40 @@
         }
     }
 </style>
+
+
+    <!-- Медиазапросы прямо внутри HTML -->
+<style>
+    /* Базовые стили для баннера */
+    #hero-banner {
+        padding: 6vw 4vw;
+    }
+    
+    #hero-banner h1 {
+        font-size: clamp(2.2rem, 8vw, 5.5rem);
+        /* Минимум 2.2rem, идеально 8vw, максимум 5.5rem */
+    }
+    
+    #hero-banner h3 {
+        font-size: clamp(1.2rem, 3.5vw, 2.5rem);
+    }
+
+    /* Дополнительная адаптация для очень маленьких экранов */
+    @media (max-width: 480px) {
+        #hero-banner {
+            padding: 10vw 5vw;
+        }
+        
+        #hero-banner h1 {
+            font-size: 7vw;
+        }
+        
+        #hero-banner h3 {
+            font-size: 3.5vw;
+        }
+    }
+</style>
+</section>
 
 
 <div class="collapse navbar-collapse" style="background-color: #373637;">
