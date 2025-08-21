@@ -87,14 +87,14 @@ hr {
 #hero-banner{
   overflow: hidden;
   height:600px;
-  background: url('../images/mm.jpg');
+  background: url('../web_images/mm.jpg');
   background-size:cover;
   color:#fff;
 }
 
 #about {
   padding: 100px 0;
-  background: url('images/pero.png') center/cover no-repeat fixed;
+  background: url('web_images/pero.png') center/cover no-repeat fixed;
 }
 
 #portfolio {
@@ -109,7 +109,7 @@ hr {
 }
 
 #contact-me {
-  background:url('images/pero-4.png') center/cover no-repeat fixed;
+  background:url('web_images/pero-4.png') center/cover no-repeat fixed;
   padding:60px 0;
 }
 
